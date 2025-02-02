@@ -23,18 +23,23 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-                "common-bg": '#179800',
+                "common-color": '#179800',
+                "service-card-bg": '#EFEBE3',
+               
               }
             }
           }
         }
       </script>
+
+      <!-- font awesome cdn -->
+      <script src="https://kit.fontawesome.com/15c154afce.js" crossorigin="anonymous"></script>
 </head>
-<body class="sora-font">
-    <header class="md:container mx-auto">
+<body class="sora-font md:container mx-auto">
+    <header class="md:container mx-auto mt-5 mb-[150px]">
         <!-- navbar section -->
             
-        <nav>
+        <nav class="mb-[90px]">
 
          <div class="navbar bg-base-100">
             <div class="navbar-start">
@@ -61,8 +66,8 @@
                     <li><a>Contact us</a></li>
                 </ul>
                 </div>
-                <!-- <img src="assets/logo-header.png" alt=""> -->
-                <a class="btn btn-ghost text-xl">daisyUI</a>
+                <img src="assets/logo-header.png" alt="">
+                <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
             </div>
             <div class="navbar-center hidden lg:flex ">
                 <ul class="menu menu-horizontal px-1">
@@ -73,9 +78,10 @@
             </div>
           
             <div class="navbar-end">
-                
-                <a class="btn border-3 border-green-200">Button</a>
-                <a class="btn bg-common-bg text-white ml-5">Register</a>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping ml-5"></i>
+                <a class="btn border-3 border-green-200 ml-5">Login</a>
+                <a class="btn bg-common-color text-white ml-5">Register</a>
 
             </div>
            
@@ -83,14 +89,115 @@
 
         </nav>
 
+        <!-- <div class="max-w-3xl text-center mx-auto">
+            <h1 class="text-5xl font-semibold mb-[32px]">Freshness <span class="text-common-color">You Can<br>
+                Count</span> On, Prices You’ll Love!</h1>
+            <p class="text-xl">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>    
+        </div> -->
+
         <banner>
+
+            <div class="max-w-3xl text-center mx-auto">
+                <h1 class="text-5xl font-semibold mb-[32px]">Freshness <span class="text-common-color">You Can<br>
+                    Count</span> On, Prices You’ll Love!</h1>
+                <p class="text-xl">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p> 
+                <img src="assets/hero-vegetables.png" alt="" class="w-[1000px] mx-auto">   
+            </div>
          
         </banner>
 
 
     </header>
 
-    <main></main>
+    <main>
+        <!-- service section -->
+
+        <section class="service_section mb-[150px]">
+            <h2 class="font-semibold text-4xl mb-12 text-common-color">Services</h2>
+             <!-- cards -->
+              <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+
+                <div class="card bg-service-card-bg p-[32px]">
+
+                    <figure>
+                        <img src="assets/service.png" alt="" >
+                    </figure>
+                    <div class="card-body space-y-5 justify-center items-center">
+                        <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+                        <p>
+                            the quality of being in a new, natural condition and not old or preserved by processes such as freezing: We pride ourselves on the freshness of our produce.
+                          </p>
+                    </div>
+                </div>
+                <!-- card 2 -->
+
+                <div class="card bg-service-card-bg p-[32px]">
+
+                    <figure>
+                        <img src="assets/service.png" alt="" >
+                    </figure>
+                    <div class="card-body space-y-5 justify-center items-center">
+                        <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+                        <p>
+                            the quality of being in a new, natural condition and not old or preserved by processes such as freezing: We pride ourselves on the freshness of our produce.
+                          </p>
+                    </div>
+                </div>
+                <!--  card 3 -->
+                <div class="card bg-service-card-bg p-[32px]">
+
+                    <figure>
+                        <img src="assets/service.png" alt="" >
+                    </figure>
+                    <div class="card-body space-y-5 justify-center items-center">
+                        <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+                        <p>
+                            the quality of being in a new, natural condition and not old or preserved by processes such as freezing: We pride ourselves on the freshness of our produce.
+                          </p>
+                    </div>
+                </div>
+
+              </div>
+        </section>
+
+        <!-- popular product section -->
+
+        <section>
+
+            <div class="hero bg-base-200">
+                <div class="hero-content flex-col lg:flex-row ">
+                  <!-- <img
+                    src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+                    class="max-w-sm rounded-lg shadow-2xl" /> -->
+                    <div class="card bg-base-100 w-96 shadow-xl ">
+                        <div class="card-body ">
+                          <h2 class="card-title">30% off</h2>
+                          <p>food that is highly flavorful, tasty, and satisfying to the senses,</p>
+                          <button class="btn btn-sm w-3/5">Default</button>
+                        </div>
+                        
+                        <figure>
+                          <img
+                            src="assets/vegetable-offer.png"
+                            alt="Shoes" />
+                        </figure>
+                      </div>
+                  <div>
+                    <h1 class="text-5xl font-bold">Box Office News!</h1>
+                    <p class="py-6">
+                      Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                      quasi. In deleniti eaque aut repudiandae et a id nisi.
+                    </p>
+                    <button class="btn btn-primary">Get Started</button>
+                  </div>
+                </div>
+              </div>
+
+
+        </section>
+
+        
+    </main>
 
     <footer></footer>
 </body>
